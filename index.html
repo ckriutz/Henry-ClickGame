@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>kriutzfield click</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script>
+            var timesclicked =  0;
+            function clicker() {
+                timesclicked++;
+                document.getElementById("score").innerHTML = timesclicked;
+                if(timesclicked % 100 ==0) {
+                    document.getElementById("message").innerHTML ="<div class='alert alert-success' role='alert'>u now hav <b>  " + timesclicked + "</b> clicks!:)</div>"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="text-center">
+            <div id="message">
+                <div class="alert alert-light" role="alert">
+            <h1></h1>
+                </div>
+            </div>
+            <h1>welcome click the *</h1>
+            <button class="btn btn-primary btn-lg" style="margin: 50px;" onclick=clicker()><h1> *</h1></button>
+            <div class="display-1"id="score"><h1>update soon</h1></div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>`  
+    </body>
+</html>
