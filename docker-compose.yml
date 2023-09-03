@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: henry-clickgame
+    build: .
+    container_name: henry-clickgame
+    restart: always
+    ports:
+      - "8088:80"
